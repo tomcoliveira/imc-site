@@ -1,0 +1,7 @@
+node_modules
+.next
+.vercel
+out
+.DS_Store
+.env
+.gitattributes # NÃO ignore .gitattributes se quiser LFS

@@ -1,0 +1,1 @@
+Projeto Next.js + Tailwind para o site IMC. Rodar com `npm install` e `npm run dev -- -p 4000`. Coloque fotos em `public/clinicas/<slug>/01.jpg...`.
