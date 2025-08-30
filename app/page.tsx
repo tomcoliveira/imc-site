@@ -169,7 +169,15 @@ export default function Home() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {CARDS.map((c) => (
             <div key={c.slug} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <div className="h-40 bg-gradient-to-tr from-slate-300 to-slate-100" />
+              <div className="relative h-40">
+                <Image
+                  src={`/clinicas/${c.slug}/01.jpg`}
+                  alt={`Foto da ${c.nome}`}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                />
+              </div>
               <div className="p-5">
                 <div className="font-semibold">{c.nome}</div>
                 <div className="text-sm text-slate-500">{c.cidade}</div>
